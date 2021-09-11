@@ -1,16 +1,16 @@
 Package.describe({
   name: 'peerlibrary:subscription-scope',
-  summary: "Scope queries on collections to subscriptions",
-  version: '0.5.0',
+  summary: 'Scope queries on collections to subscriptions',
+  version: '0.5.1',
   git: 'https://github.com/peerlibrary/meteor-subscription-scope.git'
 });
 
 Package.onUse(function (api) {
-  api.versionsFrom('METEOR@1.8.1');
+  api.versionsFrom(['1.8.1', '2.3.5']);
 
   // Core dependencies.
   api.use([
-    'coffeescript@2.4.1',
+    'coffeescript@1.0.8',
     'ecmascript',
     'underscore',
     'minimongo'
